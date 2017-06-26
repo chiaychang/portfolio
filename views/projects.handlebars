@@ -1,0 +1,245 @@
+
+ <div id="block">
+ <a class="projectLink" href="https://money-chirp-live.herokuapp.com/" target="_blank">
+   <div class="img__wrap_1 img__wrap">
+   <img class="img__img" src="/assets/images/moneychirp.png" />
+    <div class="img__description">
+    <div class="words">
+    	 <h3>Data Visualization</h3>
+    	 <br>
+    	 <p>Money Chirp is a tool for visualizing financial data and social media trends. Built on Node.js, Express, MySQL, handlebars.js</p>
+    </div>
+    </div>
+  </div>
+</a>
+
+<a class="projectLink" href="https://banana-cobbler-48291.herokuapp.com/" target="_blank">
+<div class="img__wrap_2 img__wrap">
+    <img class="img__img" src="/assets/images/techwanted.png" />
+    <div class="img__description">
+    <div class="words">
+    	 <h3>API Integration</h3>
+    	 <br>
+    	 <p>Tech Wanted is a one-stop-shop app for job hunters in the tech field. Built with GoogleMaps APIs, jQuery, AJAX, JavaScript, Firebase for storage</p>
+    </div>
+    </div>
+</div>
+</a>
+
+<a class="projectLink hideme" href="https://earth-news.herokuapp.com/" target="_blank">
+<div class="img__wrap_2 img__wrap">
+    <img class="img__img" src="/assets/images/earthnews.png" />
+    <div class="img__description">
+    <div class="words">
+       <h3>Web Scrapping</h3>
+       <br>
+       <p>EarthNews is a tool to collect, save, and add notes to news related to environmental issues. Built on MongoDB, cheerio npm package; powered by Node.js</p>
+    </div>
+    </div>
+</div>
+</a>
+
+<a class="projectLink hideme" href="https://sleepy-sierra-91765.herokuapp.com/" target="_blank">
+<div class="img__wrap_2 img__wrap">
+    <img class="img__img" src="/assets/images/trivia.png" />
+    <div class="img__description">
+    <div class="words">
+       <h3>Event Handling</h3>
+       <br>
+       <p>Watercrsis Trivia is a game to improve your knowledge on global water issues. Built with JavaScript, Bootstrap, and jQuery</p>
+    </div>
+    </div>
+</div>
+</a>
+
+<a class="projectLink hideme" href="https://stormy-woodland-99662.herokuapp.com/" target="_blank">
+<div class="img__wrap_2 img__wrap">
+    <img class="img__img" src="/assets/images/trumpgame.png" />
+    <div class="img__description">
+    <div class="words">
+       <h3>Creativity</h3>
+       <br>Tired of the politics? Here is a game for you to guess the president's best words. Both parties welcome. :) Built with key press events and JavaScript event loops.</p>
+    </div>
+    </div>
+</div>
+</a>
+
+<a class="projectLink hideme" href="https://banana-cobbler-48291.herokuapp.com/" target="_blank">
+<div class="img__wrap_2 img__wrap">
+    <img class="img__img" src="/assets/images/giftastic.png" />
+    <div class="img__description">
+    <div class="words">
+       <h3>API Integration</h3>
+       <br>
+       <p>Tech Wanted is a one-stop-shop app for job hunters in the tech field. Built with GoogleMaps APIs, jQuery, AJAX, JavaScript, Bootstrap</p>
+    </div>
+    </div>
+</div>
+</a>
+</block>
+
+<style type="text/css">
+	/* quick reset */
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+p {
+	margin: 8px;
+}
+
+.hideme {
+  opacity: 0;
+}
+
+.words {
+  position: relative;
+  top: 20%;
+}
+
+.projectLink, .projectLink:hover {
+	padding: 10px;
+	font-size: 16px;
+	border-radius: 4px;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.img__img {
+	height: 400px;
+	width: 400px;
+
+}
+
+/* relevant styles */
+.img__wrap {
+  position: relative;
+  height: 400px;
+  width: 400px;
+  float: left;
+  display: inline-block;
+  margin: 10px;
+}
+
+.img__description {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.72);
+  color: #fff;
+  visibility: visible;
+  opacity: 1;
+
+  /* transition effect. not necessary */
+  transition: opacity .2s, visibility .2s;
+}
+
+.img__wrap:hover .img__description {
+  visibility: hidden;
+  opacity: 0;
+  animation: 0.2s;
+}
+
+a {
+  display: inline-block;
+}
+.module {
+
+  -webkit-animation: flyin 600ms ease-in;
+  -moz-animation: flyin 600ms ease-in;
+  -o-animation: flyin 600ms ease-in;
+  -ms-animation: flyin 600ms ease-in;
+        animation: flyin 600ms ease-in;
+    
+}
+
+@-webkit-keyframes flyin {
+    from {
+        opacity: 0;
+  -webkit-transform: scale(2);
+}    
+   to { 
+     -webkit-transform: scale(1);
+     opacity: 1;
+   }
+}
+
+@-moz-keyframes flyin {
+    from {
+        opacity: 0;
+  -moz-transform: scale(2);
+}    
+   to { 
+     -moz-transform: scale(1);
+     opacity: 1;
+   }
+}
+
+@-o-keyframes flyin {
+    from {
+        opacity: 0;
+  -o-transform: scale(2);
+}    
+   to { 
+     -o-transform: scale(1);
+     opacity: 1;
+   }
+}
+
+@-ms-keyframes flyin {
+    from {
+        opacity: 0;
+  -ms-transform: scale(2);
+}    
+   to { 
+     -ms-transform: scale(1);
+     opacity: 1;
+   }
+}
+
+@keyframes flyin {
+    from {
+        opacity: 0;
+        transform: scale(2);
+}    
+   to { 
+     transform: scale(1);
+     opacity: 1;
+   }
+}
+
+
+</style>
+
+<script>
+
+$(document).ready(function() {
+    
+    /* Every time the window is scrolled ... */
+    $(window).scroll( function(){
+    
+        /* Check the location of each desired element */
+        $('.hideme').each( function(i){
+            
+            var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+            
+            console.log(bottom_of_window, bottom_of_object);
+            /* If the object is completely visible in the window, fade it it */
+            if( bottom_of_window > (bottom_of_object - 366) ){
+                
+                $(this).animate({'opacity':'1'},800);
+                    
+            }
+            
+        }); 
+    
+    });
+    
+});
+
+</script>
