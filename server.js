@@ -52,10 +52,10 @@ app.get("/projects", function(req, res) {
 
 });
 
-app.get("/favorites", function(req, res) {
+app.get("/contact", function(req, res) {
 
     var hbsObject = {};
-    res.render("favorites", hbsObject);
+    res.render("contact", hbsObject);
 
 });
 

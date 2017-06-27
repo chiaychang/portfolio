@@ -1,8 +1,10 @@
-<canvas></canvas>
+<canvas title="Gerard Ferrandez from codepen.io"></canvas>
+{{!-- <h3 id="tagline">hello there, welcome to my playgound :)</h3> --}}
 
 <div id="welcome">
-	<h3>Joy Chang</h3>
-	<p>marketer | coder | dreamer</p>
+<br>
+	<h2 id="name">Joy Chang</h2>
+	<h4>coder | marketer | dreamer</h4>
 </div>
 
 <style type="text/css">
@@ -26,12 +28,62 @@ canvas {
 	left: 0;
 }
 
-#welcome h3 {
-	margin-top: 380px;
+#name {
+	font-weight: 1200px;
+	font-size: 40px !important;
+}
+#welcome  {
+	margin-top: 340px;
 	font-family: "Proxima Nova Bold",serif;
 	font-weight: 700;
 	font-style: normal;
 	color: #292929;
+}
+
+#tagline {
+	font-family: "Proxima Nova Bold",serif;
+	font-weight: 700;
+	font-style: normal;
+	color: #ffd700;
+    margin-top: 25px;
+    font-size: 21px;
+    text-align: center;
+    animation: fadein 3s;
+    -moz-animation: fadein 3s; /* Firefox */
+    -webkit-animation: fadein 3s; /* Safari and Chrome */
+    -o-animation: fadein 3s; /* Opera */
+}
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-moz-keyframes fadein { /* Firefox */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-o-keyframes fadein { /* Opera */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 </style>
