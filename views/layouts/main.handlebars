@@ -25,11 +25,17 @@
   body {
   min-height: 100vh;
   margin: 0; /* Important! */
-  font-family: "Proxima Nova Bold",serif;
+  font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
   font-weight: 700;
   font-style: normal;
   color: #292929;
-  background-color: #fa8072;
+  background: #355C7D; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(#F8B195,#F67280,#C06C84,#675B7B,#355C7D); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#F8B195,#F67280,#C06C84,#675B7B,#355C7D); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#F8B195,#F67280,#C06C84,#675B7B,#355C7D); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#F8B195,#F67280,#C06C84,#675B7B,#355C7D); /* 
+  Standard syntax */
+  opacity: 0.8;
 }
 
 .wrapper {
@@ -40,12 +46,12 @@
   position: relative;
 }
 
-h2 {
+/*h2 {
   font-family: "Proxima Nova Bold",serif;
   font-weight: 700;
   font-style: normal;
-  color: #292929;
-}
+  color: #3F3844;
+}*/
 
 
 .highlight {
@@ -57,11 +63,14 @@ h2 {
   left: 0;
   z-index: -1;
   display: block;
-  border-radius: 5px;
   cursor: pointer;
   text-decoration: none;
 }
 
+.logo {
+  width: 80%;
+  height: auto;
+}
 .menu {
   padding: 20px;
   display: flex;
@@ -75,7 +84,6 @@ h2 {
   display: inline-block;
   padding: 9px;
   margin: 0 20px;
-  border-radius: 3px;
   color: #272727;
   /*background: rgba(240, 233, 241, 0.4);*/
   cursor: pointer;
@@ -99,9 +107,9 @@ h2 {
 
 
   <ul class="menu">
-    <li><a href="/" title="Home" class="menu-a">HOME</a></li>
-    <li><a href="/aboutme" title="About Me" class="menu-a">ABOUT</a></li>
-    <li><a href="/projects" title="Projects" class="menu-a">WORK</a></li>
+    <li><a href="/" class="menu-a">HOME</a></li>
+    <li><a href="/aboutme" class="menu-a">ABOUT</a></li>
+    <li><a href="/projects" class="menu-a">WORK</a></li>
    {{!--  <li><a href="/blog" title="Blog" class="menu-a">BLOG</a></li> --}}
     {{!-- <li><a href="/favorites" title="Favorites" class="menu-a"><i class="fa fa-heartbeat"></i></a></li> --}}
     <li><a href="/contact" title="Contact" class="menu-a"><i class="fa fa-envelope"></i></a></li>
