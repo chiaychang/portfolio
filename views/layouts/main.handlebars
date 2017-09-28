@@ -94,12 +94,18 @@
   margin: 40px 0;
 }
 
+#sound:hover{
+  color:#355C7D!important;
+}
+
 </style>
 
 	<title>Joy Chang - coder,marketer,dreamer</title>
 	</head>
 
 	<body>
+
+<audio id="my_audio" src="/assets/music/loair.mp3" loop="loop"></audio>
 
 <div class="mdl-layout mdl-js-layout 
             mdl-layout--fixed-header">
@@ -113,6 +119,8 @@
    {{!--  <li><a href="/blog" title="Blog" class="menu-a">BLOG</a></li> --}}
     {{!-- <li><a href="/favorites" title="Favorites" class="menu-a"><i class="fa fa-heartbeat"></i></a></li> --}}
     <li><a href="/contact" title="Contact" class="menu-a"><i class="fa fa-envelope"></i></a></li>
+
+    <li><a id="sound"><i class="fa fa-volume-up sound-icon"></i></a></li>
   </ul>
 
 		<main style="flex: 1 0 auto;">
@@ -133,6 +141,31 @@
 	</div>
 
 <script>
+var music = true;
+
+$("#sound").on("click",function(){
+    if(music){
+    $(".sound-icon").removeClass("fa-volume-up");
+    $(".sound-icon").addClass("fa-volume-off");
+      document.getElementById("my_audio").pause();
+      music=false;
+  }else if(!music){
+    $(".sound-icon").removeClass("fa-volume-off");
+    $(".sound-icon").addClass("fa-volume-up");
+    music= true;
+    document.getElementById("my_audio").play();
+  }
+});
+
+window.onload = function() {
+   if(music){
+    document.getElementById("my_audio").play();
+  }else{
+      document.getElementById("my_audio").pause();
+  }
+}
+
+
 const triggers = document.querySelectorAll('.menu-a');
 const highlight = document.createElement('span');
 highlight.classList.add('highlight');
